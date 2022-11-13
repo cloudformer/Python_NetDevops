@@ -1,4 +1,5 @@
 import os
+import re
 # os.mkdir('test')
 # print(os.getcwd())
 # qytang1 = open('qytang1','w')
@@ -20,5 +21,10 @@ print(f'os.listdir()={os.listdir()}')
 for i in os.listdir():
     if os.path.isfile(i):
         print(f'{i} is file!')
+        # file = open(i,'r')
+        for line in open(i,'r'):
+            # print(line.strip())
+            if re.match('[\s\S]*qytang[\s\S]*',line.strip()):
+                print(f'{i} include qytang')
     else:
         print(f'{i} is folder!')
