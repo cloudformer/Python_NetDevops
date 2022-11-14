@@ -28,3 +28,11 @@ for i in os.listdir():
                 print(f'{i} include qytang')
     else:
         print(f'{i} is folder!')
+######################################################################
+# print(f'方法二：')
+# print(f'文件中包含“qytang”关键字的文件为：')
+# for (root,dirs,files) in os.walk(os.getcwd(),topdown=True):
+#     for i in files:
+#         for line in open(i,'r'):
+#             if  re.match('[\s\S]*qytang[\s\S]*',line):
+#                 print(f'    {i}')
