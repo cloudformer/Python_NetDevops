@@ -1,0 +1,9 @@
+d={'qytang':1,'python':2,'cisco':3}
+l1 = 18,2,3,4,5,56,6,7,37,9
+for x in l1:
+        if x>30:
+                # continue
+                break
+        print(x)
+else:
+        print('exit by else')
