@@ -1,0 +1,12 @@
+c={x.upper():x+'!' for x in ['python','cloud','cisco']}
+d= {x:x**2 for x in [1,2,3,4]}
+for k,v in d.items():
+    print(k,v)
+for k in d.keys():
+    print(k,d.get(k))
+print(c)
+print(d)
+l1_list=[1,2,3,4,5,7,1,1,1,1,'cisco','ccie','ccnp']   #列表去重
+print(l1_list)
+print(set(l1_list))
+print(list(set(l1_list)))
